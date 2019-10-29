@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragements.Thirteen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:text="（13）测试：情景再现，从低速开始，保证每个航速数据采集时间，按照设定好的速度逐渐增加航速，得到测试数据:" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="问题：
+请回答速度增加时观察到自由液面兴波特征变化"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_border"
+        android:layout_height="200dp" />
+</LinearLayout>

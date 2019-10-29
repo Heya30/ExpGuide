@@ -11,9 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.WindowManager;
 
 import com.example.myapplication.Fragements.Eleven;
+import com.example.myapplication.Fragements.Fifteen;
+import com.example.myapplication.Fragements.Fourteen;
+import com.example.myapplication.Fragements.Seventeen;
 import com.example.myapplication.Fragements.Ten;
 import com.example.myapplication.Fragements.FirstStep;
 import com.example.myapplication.Fragements.Nine;
+import com.example.myapplication.Fragements.Thirteen;
+import com.example.myapplication.Fragements.twelve;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -80,10 +85,20 @@ public class Experiment extends AppCompatActivity {
             Nine bf9 = new Nine();
             Ten bf10 = new Ten();
             Eleven bf11 = new Eleven();
+            twelve bf12 = new twelve();
+            Thirteen bf13 = new Thirteen();
+            Fourteen bf14 = new Fourteen();
+            Fifteen bf15 = new Fifteen();
+            Seventeen bf17 = new Seventeen();
             bookShelfFragmentList.add(bf);
             bookShelfFragmentList.add(bf9);
             bookShelfFragmentList.add(bf10);
             bookShelfFragmentList.add(bf11);
+            bookShelfFragmentList.add(bf12);
+            bookShelfFragmentList.add(bf13);
+            bookShelfFragmentList.add(bf14);
+            bookShelfFragmentList.add(bf15);
+            bookShelfFragmentList.add(bf17);
 
 
         }
