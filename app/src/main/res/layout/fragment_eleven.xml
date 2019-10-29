@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragements.Eleven">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:text="读水温" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:text="水温为随机分布函数，虚拟一个水温，及每一位同学操作时水温基本不相同，根据水温与淡水密度粘度系数对应关系自动获取该水温下淡水密度和粘度系数；" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_eleven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="请输入水温"
+
+            />
+        <Button
+            android:id="@+id/confirm"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="该温度下的密度为："
+            android:textColor="#000"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/density"
+            android:layout_marginTop="23dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="1.0"
+            android:textSize="20dp"
+            android:padding="4dp"
+            android:background="@drawable/textview_border"
+            />
+    </LinearLayout>
+</LinearLayout>

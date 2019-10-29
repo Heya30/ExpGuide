@@ -10,7 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.WindowManager;
 
-import com.example.myapplication.Fragements.BlankFragment3;
+import com.example.myapplication.Fragements.Eleven;
+import com.example.myapplication.Fragements.Ten;
 import com.example.myapplication.Fragements.FirstStep;
 import com.example.myapplication.Fragements.Nine;
 
@@ -64,8 +65,8 @@ public class Experiment extends AppCompatActivity {
     public class ViewAdapter extends FragmentPagerAdapter implements Serializable {
 
         List<Fragment> bookShelfFragmentList=new ArrayList<>();
-        String[] tabs = {"阅读试验过程","虚拟水池选择","设计船模缩尺比","附体安装","模型称重","压载水线"
-        ,"模型拖车安装","读水温","破水","测试","数据处理","提交结果","sd","sdf","sd","we"};
+        String[] tabs = {"阅读试验过程","水池/船型选择","设计缩放比例","加工和精度检查","附体安装","模型称重"
+        ,"压载水线","模型拖车安装","读水温","破水","测试","数据处理","摩擦阻力补贴系数计算","提交结果"};
         public ViewAdapter(@NonNull FragmentManager fm){
             super(fm);
         }
@@ -76,20 +77,15 @@ public class Experiment extends AppCompatActivity {
 
 
             FirstStep bf = new FirstStep();
-            Nine bf2 = new Nine();
-            BlankFragment3 bf3 = new BlankFragment3();
+            Nine bf9 = new Nine();
+            Ten bf10 = new Ten();
+            Eleven bf11 = new Eleven();
             bookShelfFragmentList.add(bf);
-            bookShelfFragmentList.add(bf2);
-            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
-//            bookShelfFragmentList.add(bf3);
+            bookShelfFragmentList.add(bf9);
+            bookShelfFragmentList.add(bf10);
+            bookShelfFragmentList.add(bf11);
+
+
         }
 
         @NonNull
@@ -101,7 +97,7 @@ public class Experiment extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 15;
+            return 14;
         }
 
         //Tab标题为对应页通过getPageTitle()返回的文本
