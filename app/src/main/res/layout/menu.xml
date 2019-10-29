@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="24dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:text="@string/intro_exp"
+            android:textSize="28.0dp"
+            android:background="@drawable/bg_login_submit"
+            android:textColor="@color/white"
+            ></Button>
+
+        <Button
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:text="@string/intro_equ"
+            android:textSize="28.0dp"
+            android:background="@drawable/bg_login_submit"
+            android:textColor="@color/white"
+            ></Button>
+
+        <Button
+            android:id="@+id/menu3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:text="@string/notice_exp"
+            android:textSize="28.0dp"
+            android:background="@drawable/bg_login_submit"
+            android:textColor="@color/white"
+            ></Button>
+
+        <Button
+            android:id="@+id/menu4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:text="@string/report"
+            android:textSize="28.0dp"
+            android:background="@drawable/bg_login_submit"
+            android:textColor="@color/white"
+            ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/myInformation"
+            android:text="主页"
+            android:textSize="30dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/startExp"
+            android:text="开始实验"
+            android:layout_width="0dp"
+            android:textSize="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/discussion"
+            android:text="讨论"
+            android:layout_width="0dp"
+            android:textSize="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

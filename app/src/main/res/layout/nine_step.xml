@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragements.Nine">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:text="（21）虚拟水池选择：给定不同水池尺度及拖曳最高速度，主要目的是为下一个环节设计船模尺寸；\n
+（22）选择实船：根据水池长期试验积累船型库，选择实船；" />
+
+</FrameLayout>

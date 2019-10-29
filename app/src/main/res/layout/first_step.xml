@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragements.FirstStep">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="船模阻力试验操作指南" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="1.准确称重船模重量及压铁重量，以达到按照船模缩尺比要求实船相应的排水量；\n
+2.将已准备好的试验模型（画好水线、安装导向装置，安装好激流丝），放入水中；
+3.调整压载位置，使船模没有横倾，首尾吃水满足要求；\n
+\n4.将船模安装到拖车上（图1所示），应使其纵中剖面与前进方向一致，拖力作用线应位于纵中剖面内，其作用点在水线面附近的位置上并保持水平；
+\n5.将传感器和测量仪器连接好，检查无误时，开启所用仪器；
+\n6.将船模置于自由状态，对测量系统进行平衡，然后清零，等待实验；
+\n7.每天第一次试验前应将船模在静水中预拖一次，即“破水”，拖车速度约1m/s；
+\n8.按预先换算好的船模速度启动拖车；
+\n9.当拖车达到给定速度且稳速时，进行阻力数据采集，同时记下拖车速度；
+\n10.将采集的阻力曲线回放，截取平稳的一段，读取平均值；
+\n11.将记录的拖车速度和阻力值，填到阻力试验表格内；
+\n12.等待水面静止后重复步骤8-11，进行一系列的速度（10-15个点）的模型试验，完成实验任务。" />
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/labproc"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="已经阅读熟知过程"
+        android:id="@+id/tongyi"
+        />
+
+
+
+</LinearLayout>
