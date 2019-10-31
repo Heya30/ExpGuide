@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragements.Fourteen">
-
-
     <TextView
         android:layout_width="match_parent"
         android:textSize="20dp"
@@ -14,6 +13,108 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textColor="#000000"
-        android:text="数据处理：设计环节，根据选择实船情况选择阻力数据处理方法即二因次法。" />
+        android:text="数据处理" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/formula2"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/formula3"
+        />
 
-</FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#A7A5A5"/>
+
+    <include
+    layout="@layout/list_item"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+    <include
+        layout="@layout/list_item2"
+        android:id="@+id/table_title"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#686867"/>
+
+
+
+</LinearLayout>
+

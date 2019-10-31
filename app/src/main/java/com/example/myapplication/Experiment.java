@@ -82,6 +82,12 @@ public class Experiment extends AppCompatActivity {
 
 
             FirstStep bf = new FirstStep();
+            FirstStep bf102 = new FirstStep();
+            FirstStep bf103 = new FirstStep();
+            FirstStep bf104 = new FirstStep();
+            FirstStep bf105 = new FirstStep();
+            FirstStep bf106 = new FirstStep();
+
             Nine bf9 = new Nine();
             Ten bf10 = new Ten();
             Eleven bf11 = new Eleven();
@@ -91,6 +97,12 @@ public class Experiment extends AppCompatActivity {
             Fifteen bf15 = new Fifteen();
             Seventeen bf17 = new Seventeen();
             bookShelfFragmentList.add(bf);
+            bookShelfFragmentList.add(bf102);
+            bookShelfFragmentList.add(bf103);
+            bookShelfFragmentList.add(bf104);
+            bookShelfFragmentList.add(bf105);
+            bookShelfFragmentList.add(bf106);
+
             bookShelfFragmentList.add(bf9);
             bookShelfFragmentList.add(bf10);
             bookShelfFragmentList.add(bf11);
