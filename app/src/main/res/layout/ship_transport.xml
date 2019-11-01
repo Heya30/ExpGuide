@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  请在如下两艘船中选择一艘。\n01 运输船\n  主要参数:"
+            android:textSize="26dp"/>
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transport01"/>
+        <ImageView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/transportpic01"
+        android:adjustViewBounds="true"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/transportpic02"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02 运输船\n  主要参数:"
+            android:textSize="26dp"/>
+
+        <ImageView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transport02"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/transportpic02"
+            android:adjustViewBounds="true"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/transportpic03"
+            android:adjustViewBounds="true"/>
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01运输船"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02运输船"
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>

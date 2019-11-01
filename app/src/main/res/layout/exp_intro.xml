@@ -1,20 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intro_exp"
-        android:layout_marginTop="140dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginLeft="24dp"
-        android:textSize="26dp"
-        android:textColor="@color/white">
+        android:orientation="vertical">
 
-    </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="24dp"
+            android:text="船模拖曳水池实验室简介"
+            android:textColor="@color/white"
+            android:textSize="26dp"></TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="24dp"
+            android:text="        华中科技大学（原华中工学院）船舶与海洋工程学院船舶工程系船模拖曳水池实验室始建于1972年，1978年正式运行，其中试验水池长175米、宽6米、水深4米，实验室使用面积约3600平方米（如图1所示）。1987年4月24日，船模拖曳水池实验室被接纳为国际船模拖曳水池会议（International Towing Tank Conference，简称ITTC）正式成员。2010年12月24以船模拖曳水池实验室作为主体的船舶和海洋水动力湖北省重点实验室（华中科技大学）正式挂牌运行。"
+            android:textColor="@color/login_other_color"
+            android:textSize="22dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="图1 实验室水池"
+            android:textColor="@color/login_other_color"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="24dp"
+            android:text="试验能力"
+            android:textColor="@color/white"
+            android:textSize="26dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="24dp"
+            android:text="        实验室拖车（如图2所示）最高速度达8米/秒，并备有水面阻力仪、水下阻力仪、自航仪、螺旋桨动力仪、适航仪、六单元冲箱式造波机、流场测量装置等设备和仪器。其中，造波机（如图3所示）造波能力为最大波高0.2米，最大波长 8.0米。测试设备及计算机采集系统齐全，可进行水面水下舰艇的快速性试验（阻力和自航）、水面水下舰艇的耐波性试验、约束模操纵性试验、尾流场测试试验和其他非常规船型（譬如海洋工程、两栖战车、浮标、水下机器人、水下拖体等）的水动力性能试验研究。"
+            android:textColor="@color/login_other_color"
+            android:textSize="22dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="图2 实验室拖车"
+            android:textColor="@color/login_other_color"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pic3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="图3 实验室造波机"
+            android:textColor="@color/login_other_color"/>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

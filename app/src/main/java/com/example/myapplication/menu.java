@@ -16,11 +16,18 @@ public class menu extends Activity implements View.OnClickListener {
     private Button myInfro;
     private Button startExp;
 
-    protected void onCreate (Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-        exp=findViewById(R.id.menu1);
+        //brief introduction
+        exp = findViewById(R.id.menu1);
         exp.setOnClickListener(this);
+        //equipment
+        equ = findViewById(R.id.menu2);
+        equ.setOnClickListener(this);
+        //notification
+        notice = findViewById(R.id.menu3);
+        notice.setOnClickListener(this);
 
         discussion = findViewById(R.id.discussion);
         discussion.setOnClickListener(this);
@@ -31,15 +38,16 @@ public class menu extends Activity implements View.OnClickListener {
 
     }
 
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.discussion:
-                Intent intent = new Intent(menu.this,Discussion.class);
+                Intent intent = new Intent(menu.this, Discussion.class);
                 startActivity(intent);
                 break;
             case R.id.myInformation:
-                Intent intent2 = new Intent(menu.this,Informaition.class);
+                Intent intent2 = new Intent(menu.this, Informaition.class);
                 startActivity(intent2);
                 break;
             case R.id.startExp:
@@ -47,12 +55,19 @@ public class menu extends Activity implements View.OnClickListener {
                 startActivity(intent3);
                 break;
             case R.id.menu1:
-                Intent intent4 = new Intent(menu.this,introExp.class);
+                Intent intent4 = new Intent(menu.this, introExp.class);
                 startActivity(intent4);
                 break;
-
-                default:
-                    break;
+            case R.id.menu2:
+                Intent intent5 = new Intent(menu.this, introEqu.class);
+                startActivity(intent5);
+                break;
+            case R.id.menu3:
+                Intent intent6 = new Intent(menu.this, introNoti.class);
+                startActivity(intent6);
+                break;
+            default:
+                break;
 
 
         }
