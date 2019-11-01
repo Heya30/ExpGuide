@@ -40,7 +40,7 @@ public class Seventeen extends Fragment implements View.OnClickListener {
             case R.id.submit:
                 AlertDialog.Builder dialog = new AlertDialog.Builder(view.getContext());
                 Random ra =new Random();
-                int point = ra.nextInt(20)+1+80 ;
+                int point = ra.nextInt(18)+1+80 ;
                 dialog.setMessage("你的分数是"+point);
                 dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override

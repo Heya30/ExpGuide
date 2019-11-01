@@ -20,7 +20,7 @@
         android:paddingBottom="10dip"
         android:paddingTop="10dip"
         android:textColor="#000000"
-        android:textSize="15sp"
+        android:textSize="12sp"
         android:singleLine="true"
         android:text="Vs(kn)" />
 
@@ -52,7 +52,7 @@
 
         android:textColor="#000000"
 
-        android:textSize="15sp"
+        android:textSize="12sp"
 
         android:singleLine="true"
 
@@ -90,7 +90,7 @@
 
         android:singleLine="true"
 
-        android:textSize="15sp"
+        android:textSize="12sp"
 
         android:gravity="center"
 
@@ -126,7 +126,7 @@
 
         android:singleLine="true"
 
-        android:textSize="15sp"
+        android:textSize="12sp"
 
         android:gravity="center"
 
@@ -158,7 +158,7 @@
 
         android:textColor="#000000"
 
-        android:textSize="15sp"
+        android:textSize="12sp"
 
         android:singleLine="true"
 

@@ -13,6 +13,7 @@ import android.view.WindowManager;
 import com.example.myapplication.Fragements.Eleven;
 import com.example.myapplication.Fragements.Fifteen;
 import com.example.myapplication.Fragements.Fourteen;
+import com.example.myapplication.Fragements.Fourteen2;
 import com.example.myapplication.Fragements.Seventeen;
 import com.example.myapplication.Fragements.Ten;
 import com.example.myapplication.Fragements.FirstStep;
@@ -69,9 +70,9 @@ public class Experiment extends AppCompatActivity {
     //ViewPager的适配器
     public class ViewAdapter extends FragmentPagerAdapter implements Serializable {
 
-        List<Fragment> bookShelfFragmentList=new ArrayList<>();
+        List<Fragment> experimentStep=new ArrayList<>();
         String[] tabs = {"阅读试验过程","水池/船型选择","设计缩放比例","加工和精度检查","附体安装","模型称重"
-        ,"压载水线","模型拖车安装","读水温","破水","测试","数据处理","摩擦阻力补贴系数计算","提交结果"};
+        ,"压载水线","模型拖车安装","读水温","破水","测试","数据处理(1)","数据处理（2）","摩擦阻力补贴系数计算","提交结果"};
         public ViewAdapter(@NonNull FragmentManager fm){
             super(fm);
         }
@@ -94,23 +95,25 @@ public class Experiment extends AppCompatActivity {
             twelve bf12 = new twelve();
             Thirteen bf13 = new Thirteen();
             Fourteen bf14 = new Fourteen();
+            Fourteen2 bf14_2 = new Fourteen2();
             Fifteen bf15 = new Fifteen();
             Seventeen bf17 = new Seventeen();
-            bookShelfFragmentList.add(bf);
-            bookShelfFragmentList.add(bf102);
-            bookShelfFragmentList.add(bf103);
-            bookShelfFragmentList.add(bf104);
-            bookShelfFragmentList.add(bf105);
-            bookShelfFragmentList.add(bf106);
+            experimentStep.add(bf);
+            experimentStep.add(bf102);
+            experimentStep.add(bf103);
+            experimentStep.add(bf104);
+            experimentStep.add(bf105);
+            experimentStep.add(bf106);
 
-            bookShelfFragmentList.add(bf9);
-            bookShelfFragmentList.add(bf10);
-            bookShelfFragmentList.add(bf11);
-            bookShelfFragmentList.add(bf12);
-            bookShelfFragmentList.add(bf13);
-            bookShelfFragmentList.add(bf14);
-            bookShelfFragmentList.add(bf15);
-            bookShelfFragmentList.add(bf17);
+            experimentStep.add(bf9);
+            experimentStep.add(bf10);
+            experimentStep.add(bf11);
+            experimentStep.add(bf12);
+            experimentStep.add(bf13);
+            experimentStep.add(bf14);
+            experimentStep.add(bf14_2);
+            experimentStep.add(bf15);
+            experimentStep.add(bf17);
 
 
         }
@@ -119,12 +122,12 @@ public class Experiment extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             initFragment();
-            return bookShelfFragmentList.get(position);
+            return experimentStep.get(position);
         }
 
         @Override
         public int getCount() {
-            return 14;
+            return 15;
         }
 
         //Tab标题为对应页通过getPageTitle()返回的文本
